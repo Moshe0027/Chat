@@ -20,7 +20,6 @@ const App = () => {
     })
 
     socket.on('receive_message', (message) => {
-      console.log(message);
       setListText(listText => [...listText, message]);
     })
   }, [socket])
